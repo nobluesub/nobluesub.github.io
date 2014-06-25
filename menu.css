@@ -1,0 +1,107 @@
+#menu {
+	height: 55px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+}
+
+#menu-wrapper ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+#menu-wrapper ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+/* menu padding put in #menu-line */
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#menu-wrapper ul li:hover {
+  background: rgb(48, 122, 211);
+}
+#menu-wrapper ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+#menu-wrapper ul li ul li { 
+  background: rgba(25, 93, 186, 0.9); 
+  display: block; 
+  text-shadow: 0 -1px 0 #000;
+}
+#menu-wrapper ul li ul li:hover {
+  background: rgb(48, 122, 211)
+}
+
+#menu-wrapper ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#menu-wrapper a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color:transparent;
+}
+
+/* Selected item */
+#menu-wrapper ul li.selected {
+  background-color: rgb(48, 122, 211);
+}
+
+#menu-wrapper ul li.selected:hover {
+  background-color: #195da6;
+}
+
+.menu-line.selected a {
+  color: #ffffff;
+}
+
+.menu-line.selected a:hover {
+  color: #ffffff;
+}
+/* End selected item */
+
+.menu-line a {
+  color: #000000;
+}
+
+.menu-line a:hover {
+  color: #ffffff;
+}
+
+.menu-unfold a {
+  color: #ffffff;
+}
