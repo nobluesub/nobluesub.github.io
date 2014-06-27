@@ -105,7 +105,7 @@ a:hover {
 /* Search */
 
 #search {
-	width: 320px;
+	width: 250px;
 	height: 60px;
 	padding: 0px;
 }
@@ -122,7 +122,7 @@ a:hover {
 }
 
 #search-text {
-	width: 210px;
+	width: 170px;
 	outline: none;
 	background: #F5F0E7;
 	border: 3px solid rgb(48, 122, 211);
@@ -131,7 +131,7 @@ a:hover {
 	text-transform: lowercase;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #fefefe;
-	margin-left: 13px;
+	margin-left: 8px;
 }
 
 #search-submit {
@@ -142,6 +142,7 @@ a:hover {
 	border-radius: 4px;
 	background-image: url("images/search.png");
 	background-color: rgb(48, 122, 211);
+	vertical-align: bottom;
 }
 
 #search-submit:hover{
@@ -165,25 +166,23 @@ a:hover {
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0 0 20px #000000;
-	width: 84em;
+	width: 75em;
 	z-index: 50;
 	background-color: rgba(48, 122, 211, 0.95);
 	margin-bottom: 3em;
-	overflow:auto
 }
 
 /* Page */
 
 #feed {
 	overflow: hidden;
-	width: 680px;
+	width: 610px;
 	margin: 0 auto 0 26px;
 	padding: 30px 0px;
 }
 
 #article {
-	overflow: hidden;
-	width: 680px;
+	width: 610px;
 	margin: 0 auto 0 26px;
 	padding: 50px 0px;
 }
@@ -260,7 +259,7 @@ a:hover {
 	border-radius: 4px;
 	text-transform: uppercase;
 	font-size: 12px;
-	margin-left: 450px;
+	margin-left: 380px;
     margin-top: 5px;
     position: absolute;
 	color: #ffffff;
@@ -317,7 +316,7 @@ a:hover {
     margin-right: 26px;
     margin-top: 50px;
     position: relative;
-    width: 350px;
+    width: 250px;
 }
 
 #sidebar-wrapper-home {
@@ -326,13 +325,13 @@ a:hover {
     margin-right: 26px;
     margin-top: 24px;
     position: relative;
-    top: -277px;
-    width: 350px;
+    top: -252px;
+    width: 250px;
 }
 
 #sidebar {
 	float: right;
-	width: 300px;
+	width: 250px;
 	margin: 0px;
 	padding: 40px 18px 0;
 	color: #000000;
