@@ -20,24 +20,10 @@
 <!-- end banner -->
 <div id="menu-wrapper">
 	<div id="menu">
-		<ul><li class="menu-line selected"><a href="index.html">Accueil</a></li>
-		  <li class="menu-line"><a class="inactive" href="#">Projets en cours</a>
-			<ul id="en-cours">
-				<script type="text/javascript">
-				$( '#en-cours' ).load( 'en-cours.html' );
-				</script>
-			</ul>
-		  </li>
-		  <li class="menu-line"><a class="inactive" href="#">Projets terminés</a>
-			<ul id="termines">
-				<script type="text/javascript">
-				$( '#termines' ).load( 'termines.html' );
-				</script>
-			</ul>
-		  </li>
-		  <li class="menu-line"><a href="about.html">A-propos - FAQ</a></li>
-		  <li class="menu-line"><a href="contact.html">Contact</a></li>
-		</ul>
+		<script type="text/javascript">
+		$( '#menu' ).load( 'menu.html' );
+		</script>
+		<noscript>Activez javascript pour voir le menu!</noscript>
 	</div>
 </div>
 <!-- end #menu -->
@@ -134,7 +120,9 @@ $(window).scroll(function() {
 });		
 </script>
 <div id="footer">
-	<p>&copy; 2014 - Design par Nobluesky - Tous droits réservés. <a id="legal" href="about.html#faqinfos">Mentions Légales</a></p>
+	<script type="text/javascript">
+	$( '#footer' ).load( 'footer.html' );
+	</script>
 </div>
 <!-- end #footer -->
 <script type="text/javascript">
