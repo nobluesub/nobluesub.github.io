@@ -146,7 +146,7 @@ a:hover {
 	background: -webkit-linear-gradient(white, transparent); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(white, transparent); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(white, transparent); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(white, transparent); /* Standard syntax */
+	background: linear-gradient(white, rgba(225, 225, 225, 0)); /* Standard syntax */
 }
 
 #page-wrapper {
@@ -459,66 +459,81 @@ a:hover {
 	text-decoration: underline;
 }
 
-progress {
-	width: 250px;
-	-webkit-appearance: none;
-	border: 2px solid rgb(47, 121, 211);
-    border-radius: 4px;
-    width: 248px;
-	background-color: #fff;
-	color: #2f79d3;
+/* progress bar */
+
+/* blue background with bar*/
+
+.progress-bar {
+        background-color: #103c6b;
+        height: 15px;
+        padding: 2px;
+        width: 99%;
+        margin: 5px 0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+		float: right;
 }
 
-progress::-webkit-progress-bar { 
-	background-color: #fff;
+.progress-bar span {
+        display: inline-block;
+        height: 100%;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        -webkit-transition: width .4s ease-in-out;
+        -moz-transition: width .4s ease-in-out;
+        -ms-transition: width .4s ease-in-out;
+        -o-transition: width .4s ease-in-out;
+        transition: width .4s ease-in-out;
 }
 
-/* webkit */
+/* adds inner blue bar */
 
-progress::-webkit-progress-value { 
-	 background-image:
-	   -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #2f79d3, #2f79d3);
-	   background-size: 35px 20px, 100% 100%, 100% 100%;
-	   -webkit-animation: animate-stripes 5s linear infinite;
-        animation: animate-stripes 5s linear infinite;
+.blue span {
+        background-color: #2f79d3;
+}
+
+/* adds stripes  */
+
+.stripes span {
+        -webkit-background-size: 20px 20px;
+        -moz-background-size: 20px 20px;
+        background-size: 20px 20px;
+        background-image: -webkit-gradient(linear, left top, right bottom,
+                                                color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+                                                color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+                                                color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+                                                to(transparent));
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);            
+
+        -webkit-animation: animate-stripes 3s linear infinite;
+        -moz-animation: animate-stripes 3s linear infinite;
 }
 
 @-webkit-keyframes animate-stripes {
-   100% { background-position: -100px 0px; }
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
 }
 
-@keyframes animate-stripes {
-   100% { background-position: -100px 0px; }
-}
- 
-/* mozilla */
- 
-progress::-moz-progress-bar { 
-	background-image:
-    -moz-linear-gradient(
-      135deg, 
-      transparent 33%, 
-      rgba(0, 0, 0, 0.1) 33%, 
-      rgba(0, 0, 0, 0.1) 66%, 
-      transparent 66% 
-    ),
-    -moz-linear-gradient(
-      top, 
-      rgba(255, 255, 255, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    ),
-    -moz-linear-gradient(
-      left, 
-      #2f79d3, 
-      #2f79d3
-    );
-	background-size: 35px 20px, 100% 100%, 100% 100%;
+@-moz-keyframes animate-stripes {
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
 }
 
 .imgpart {
