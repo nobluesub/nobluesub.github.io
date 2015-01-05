@@ -24,10 +24,12 @@
 	<div id="menu">
 		<script type="text/javascript">
 		$( '#menu' ).load( 'menu.html' );
-		$(function() {
-			setTimeout(function(){
+		$(function()
+		{
+		$(window).bind('load', function()
+		{
 			$('#index').addClass('menu-line selected');
-			}, 500);  
+		});
 		});
 		</script>
 		<noscript>Activez javascript pour voir le menu!</noscript>
