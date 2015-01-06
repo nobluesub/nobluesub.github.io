@@ -23,13 +23,8 @@
 <div id="menu-wrapper">
 	<div id="menu">
 		<script type="text/javascript">
-		$( '#menu' ).load( 'menu.html' );
-		$(function()
-		{
-		$(window).bind('load', function()
-		{
-			$('#index').addClass('menu-line selected');
-		});
+		$( '#menu' ).load( 'menu.html', function() {
+		$('#index').addClass('menu-line selected');
 		});
 		</script>
 		<noscript>Activez javascript pour voir le menu!</noscript>
