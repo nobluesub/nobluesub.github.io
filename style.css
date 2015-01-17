@@ -466,8 +466,8 @@ a:hover {
 .progress-bar {
         background-color: #103c6b;
         height: 15px;
-        padding: 2px;
-        width: 99%;
+/*        padding: 2px;*/
+        width: 100%;
         margin: 5px 0;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
