@@ -3,21 +3,21 @@ var exportablePlayerProperties = {
 	'medium': {
 		'width': 300,
 		'height': 389,
-		'loginUrl': '/account/login?view=player',
+		'loginUrl': 'https://www.radionomy.com/js/account/login?view=player',
 		'htmlid': '#playerMedium',
 		'verticalVolume': true
 	},
 	'horizontal': {
 		'width': 728,
 		'height': 90,
-		'loginUrl': '/account/login?view=playerhorizontal',
+		'loginUrl': 'https://www.radionomy.com/js/account/login?view=playerhorizontal',
 		'htmlid': '#playerBanner',
 		'verticalVolume': false
 	},
 	'mobile': {
 		'width': 320,
 		'height': 90,
-		'loginUrl': '/account/login?view=playermobile',
+		'loginUrl': 'https://www.radionomy.com/js/account/login?view=playermobile',
 		'htmlid': '#playerMobile',
 		'verticalVolume': false
 	}
