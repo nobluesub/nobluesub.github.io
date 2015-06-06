@@ -72,7 +72,7 @@ function InitDetachedPlayerFunc() {
 	urlInfo.setAttribute('href', p.src)
 	hostUrl = urlInfo.protocol + '//' + urlInfo.hostname;
 
-	if (hostUrl.indexOf('radionomy.com', hostUrl.length - 'radionomy.com'.length) == -1) {
+	if (hostUrl.indexOf('nobluesub.com', hostUrl.length - 'nobluesub.com'.length) == -1) {
 		console.log('Error: ' + hostUrl + ' is not an authorized host');
 		return;
 	}
