@@ -315,7 +315,7 @@ a:hover {
 
 .button-page.selected {
 	background: #114082;
-	cursor: context-menu;
+	cursor: text;
 }
 
 .button-number {
@@ -367,6 +367,7 @@ a:hover {
 
 .post-images:hover {
 	box-shadow: 0 0 0 5px rgb(255, 255, 255), 0 0 0 8px rgba(48, 122, 211, 0.8);
+	cursor: text;
 }
 
 /* Sidebar */
