@@ -5,10 +5,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #000000;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:center top;
-	background-attachment:fixed;
+	background-size: cover!important;
+	background-repeat:no-repeat!important;
+	background-position:center top!important;
+	background-attachment:fixed!important;
 }
 
 h1, h2, h3, h4 {
