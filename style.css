@@ -143,6 +143,7 @@ a:hover {
 #menu-wrapper {
 	height: 57px;
 	margin-bottom: 5em;
+	margin-top: -3px;
 	background: -webkit-linear-gradient(white, rgba(225, 225, 225, 0)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(white, rgba(225, 225, 225, 0)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(white, rgba(225, 225, 225, 0)); /* For Firefox 3.6 to 15 */
