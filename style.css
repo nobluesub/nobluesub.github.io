@@ -9,6 +9,7 @@ body {
 	background-repeat:no-repeat!important;
 	background-position:center top!important;
 	background-attachment:fixed!important;
+	/* Important lines to apply rules to BG script */
 }
 
 h1, h2, h3, h4 {
