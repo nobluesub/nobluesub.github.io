@@ -13,12 +13,12 @@
 	width: 99%;
 	height: 211px;
 	overflow: hidden;
-	top:50px;
+	top:30px;
 	border: 3px solid #ffffff;
 	border-radius: 4px;
 }
 .slider-wrapper {
-	height:278px;
+	height:250px;
 	width: 610px;
 	margin-left: 26px;
 }
