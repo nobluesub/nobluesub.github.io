@@ -353,7 +353,7 @@ a:hover {
 	transition: margin 0.1s ease;
 }
 .spoilerbutton[value="Voir"] + .spoiler > div {
-	margin-top:-100%;
+	margin-top:-5000%;
 }
 .spoilerbutton[value="Cacher"] + .spoiler {
 	padding:0px;
