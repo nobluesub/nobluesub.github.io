@@ -1,3 +1,1 @@
-User-agent: *
-Disallow: /stream/
 Sitemap: http://www.nobluesub.com/sitemap.xml
