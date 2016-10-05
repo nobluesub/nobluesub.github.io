@@ -190,7 +190,7 @@ a:hover {
 	border: 3px solid #ffffff;
 	background: #f1ede4;
 	border-radius: 4px;
-	display: none;
+	/* display: none; */
 }
 
 #annonce h1 {
