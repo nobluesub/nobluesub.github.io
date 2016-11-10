@@ -1,1 +1,1 @@
-Sitemap: http://www.nobluesub.com/sitemap.xml
+Sitemap: http://nobluesub.com/sitemap.xml
