@@ -151,6 +151,10 @@ a:hover {
 	background: linear-gradient(white, rgba(255, 255, 255, 0)); /* Standard syntax */
 }
 
+.mobile {
+	visibility: hidden;
+}
+
 #page-wrapper {
 	margin-left: auto;
 	margin-right: auto;
@@ -514,6 +518,7 @@ a:hover {
 
 .blue span {
         background-color: #2f79d3;
+		margin-bottom: 50px;
 }
 
 /* adds stripes  */
@@ -601,4 +606,116 @@ a:hover {
 #legal {
 	background-color: #fff;
 	border-radius:3px;
+}
+
+/* Dirty mobile version (please spare me!!) */
+
+@media all and (orientation: portrait) {
+	.post {
+		font-size: 33px!important;
+	}
+	
+	.comcount {
+		font-size: 25px!important;
+		margin-top: 50px;
+	}
+	
+	h1 {
+		font-size: 1.4em!important;
+		padding-bottom: 50px!important;
+	}
+	
+	#menu-wrapper {
+		margin-bottom: 12em!important;
+	}
+	
+	#menu-wrapper ul li {
+		font: bold 40px sans-serif!important;
+		padding: 8px 0px;
+	}
+	
+	#menu-wrapper ul li ul {
+		margin-top: 50px;
+	}
+
+	#menu-wrapper ul li ul li {
+		width: 450px!important;
+		
+	}
+	
+	
+	/* Show again menu items for progress/tchat (class mobile hidden previously)*/
+	.mobile {
+		visibility: visible!important;
+		background: #fd9999!important;
+	}
+	
+	#page-wrapper {
+		margin-bottom: 15em;
+	}
+	
+	.slider-wrapper {
+		width: 95%!important;
+	}
+	
+	.nivoSlider {
+		height: auto!important;
+	}
+	
+	.slider-wrapper {
+		margin-bottom: 145px;
+	}
+	
+	#sidebar-wrapper, #sidebar-wrapper-home {
+		display: none!important;
+	}
+	
+	#feed, #article {
+		width: 97.3%!important;
+	}
+	
+	.button-dl {
+		padding: 20px 30px;
+		border-radius: 12px;
+		font-size: 33px;
+		line-height: 200px;
+	}
+	
+	.button {
+		padding: 40px 200px;
+		border-radius: 12px;
+		text-transform: uppercase;
+		font-size: 28px!important;
+		margin-left: 13%!important;
+	}
+	
+	.button-page {
+		padding: 30px 50px;
+		font-size: 33px;
+		margin-left: auto;
+		border-radius: 12px;
+	}
+	
+	.button-number {
+		margin: 50px;
+	}
+	
+	.spoilerbutton {
+	padding: 18px 48px;
+	font-size: 33px;
+	border-radius: 9px;
+}
+
+	.entry {
+		margin-bottom: 55px!important;
+	}
+	
+	#footer {
+		height: 150px;
+	}
+	
+	#footer p {
+		font-size: 26px;
+	}
+	
 }
