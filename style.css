@@ -647,7 +647,6 @@ a:hover {
 	/* Show again menu items for progress/tchat (class mobile hidden previously)*/
 	.mobile {
 		visibility: visible!important;
-		background: #fd9999!important;
 	}
 	
 	#page-wrapper {
