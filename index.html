@@ -48,7 +48,11 @@
 <div id="sidebar-wrapper-home">
 	<div id="sidebar" >
 		<script type="text/javascript">
-		$( '#sidebar' ).load( 'sidebar.html' );
+			jQuery(window).load(function () {
+				setTimeout(function () {
+					$( '#sidebar' ).load( 'sidebar.html' ); 
+				}, 10);
+			});
 		</script>
 		<noscript>Activez javascript pour voir tout le contenu!</noscript>
 	</div>
