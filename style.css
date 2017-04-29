@@ -644,9 +644,13 @@ a:hover {
 	}
 	
 	
-	/* Show again menu items for progress/tchat (class mobile hidden previously)*/
+	/* Show again menu items for progress/tchat (class mobile hidden previously) and hide desktop specific items*/
 	.mobile {
 		visibility: visible!important;
+	}
+	
+	.desktop {
+		display:none!important;
 	}
 	
 	#page-wrapper {
