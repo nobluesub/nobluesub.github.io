@@ -65,6 +65,7 @@
 				<a id="titlepost1" href="#urlpost1"></a>
 				<p class="meta"><span id="datepost1"></span><span class="posted">Posté par <a href="about.html#nobluesky">Nobluesky</a></span></p>
 				<p class="comcount"><a href="https://nobluesub.com/#urlpost1#disqus_thread">Commentaires</a></p>
+				<noscript>Activez javascript pour voir le contenu!</noscript>
 				<div style="clear: both;">&nbsp;</div>
 				<div class="entry">
 					<div id="imgpost1" ></div>
@@ -148,7 +149,12 @@
 			</div>
 			<script type="text/javascript">
 			$(".post").each(function() {
-			$(this).html($(this).html().replace(/#urlpost1/g, '2017-12-25.html').replace(/#urlpost2/g, '2017-12-20.html').replace(/#urlpost3/g, '2017-11-10.html').replace(/#urlpost4/g, '2017-10-02.html').replace(/#urlpost5/g, '2017-09-19.html'));
+			$(this).html($(this).html()
+			.replace(/#urlpost1/g, '2017-12-25.html')
+			.replace(/#urlpost2/g, '2017-12-20.html')
+			.replace(/#urlpost3/g, '2017-11-10.html')
+			.replace(/#urlpost4/g, '2017-10-02.html')
+			.replace(/#urlpost5/g, '2017-09-19.html'));
 			});
 			</script>
 			<div id="button-page-wrapper">
