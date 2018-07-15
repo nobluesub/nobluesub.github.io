@@ -19,7 +19,9 @@
 <div id="menu-wrapper">
 	<div id="menu">
 		<script type="text/javascript">
-		$( '#menu' ).load( 'menu.html' );
+		$( '#menu' ).load( 'menu.html', function() {
+		$('#progress').addClass('menu-line selected');
+		});
 		</script>
 		<noscript>Activez javascript pour voir le menu!</noscript>
 	</div>
