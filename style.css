@@ -560,12 +560,12 @@ a:hover {
         0% {background-position: 0 0;} 100% {background-position: 60px 0;}
 }
 
-.socialbutton {
+.snbutton {
 	width: 25px;
 	padding-left: 8px;
 }
 
-#socialbtnwrapper {
+#snbtnwrapper {
 	margin-left: 28%!important;
 	margin-top: -10px!important;
 	margin-bottom: 5px!important;
